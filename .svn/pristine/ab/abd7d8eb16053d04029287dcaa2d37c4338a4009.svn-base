@@ -1,0 +1,16 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.9.10.67:3306/answer?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: dev123
+  jpa:
+    hibernate:
+      ddl-auto: update
+  http:
+    multipart:
+      max-file-size: 4MB
+      max-request-size: 10MB
